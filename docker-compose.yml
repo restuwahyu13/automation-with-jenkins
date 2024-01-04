@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    container_name: nodejs-app
+    restart: always
+    image: registry.gitlab.com/restuwahyu13/node-helloworld-api:v1
+    ports:
+      - 3000:3000
