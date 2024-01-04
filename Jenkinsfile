@@ -3,13 +3,13 @@ pipeline {
 
   environment {
     GITLAB_REGISTRY_URL = 'registry.gitlab.com'
-    GITLAB_REPOSITORY_NAME = 'restuwahyu13/node-helloworld-api'
+    GITLAB_REPOSITORY_NAME = 'restuwahyu13/node-helloworld-api' // <- change with your repo
     DOCKER_COMPOSE_ORG_FILE = './node-helloworld-api/docker-compose.yml'
     DOCKER_COMPOSE_PROD_FILE = './node-helloworld-api/docker-compose.prod.yml'
     SLACK_CHANNELID = 'C06C4233F4L'
     SLACK_MSG_SUCCESS = 'Your pipeline is running well'
     SLACK_MSG_FAILED = 'Your pipeline is not running well'
-    SSH_HOST = '192.168.64.10'
+    SSH_HOST = '192.168.64.10' // <- change with your server ip
     DIRECTORY = './node-helloworld-api'
   }
 
